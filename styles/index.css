@@ -1,14 +1,91 @@
-/* *{
+body{
+     font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+*{
     margin: 0;
     padding: 0;
-} */
-.home-page{
-    height: 100vh;
+}
+.header{
+    min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to right, rgb(9, 3, 20), rgba(214, 210, 222,0.27)), url(../images/school-picture.png);                                         /* linear-gradian a color a 4ta number dite hobe */
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/school-picture.png);
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
     position: relative;
 }
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    border-radius : 50%;
+    width: 80px;
+    height: 80px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 17px;
+     
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+   transition: 0.5s ease;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: rgb(171, 183, 61);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 30px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: aqua;
+}
+.visit-more-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.visit-more-btn:hover{
+    border: 1px solid brown;
+    background-color: brown;
+    color: rgb(193, 159, 159);
+}
+ 

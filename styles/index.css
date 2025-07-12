@@ -1,0 +1,14 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.home-page{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(9, 3, 20), rgba(214, 210, 222,0.27)), url(../images/school-picture.png);                                         /* linear-gradian a color a 4ta number dite hobe */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
